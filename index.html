@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial scale=1.0">
+      <title>landingpage</title>
+<style>
+body
+{
+   margin:0;
+   padding:0;
+
+}
+.bg
+{
+  width:100%;
+  height:100%;
+  background: url(bg.jpg);
+  background-size:cover;
+  position: absolute;
+}
+
+h1
+{ float: right;
+  margin:0;
+  padding-right:100px;
+  padding-top:160px;
+  color:transparent;
+  font-size:3em;
+  font-family:jokerman;
+}
+h1 span
+{
+  display:table-cell;
+  margin:0;
+  padding:0;
+  animation: animate 4s linear infinite;
+}
+h1 span:nth-child(1)
+{
+animation-delay:0s;
+}
+h1 span:nth-child(2)
+{
+animation-delay:0.25s;
+}
+h1 span:nth-child(3)
+{
+  animation-delay:0.5s;
+}
+h1 span:nth-child(4)
+{
+  animation-delay:0.75s;
+}
+h1 span:nth-child(5)
+{
+  animation-delay:1s;
+}
+h1 span:nth-child(6)
+{
+  animation-delay:1.25s;
+}
+h1 span:nth-child(7)
+{
+  animation-delay:1.5s;
+}
+h1 span:nth-child(8)
+{
+  animation-delay:1.75s;
+}
+h1 span:nth-child(9)
+{
+  animation-delay:2s;
+}
+h1 span:nth-child(10)
+{
+animation-delay:2.25s;
+}
+h1 span:nth-child(11)
+{
+  animation-delay:2.5s;
+}
+h1 span:nth-child(12)
+{
+  animation-delay:2.75s;
+}
+h1 span:nth-child(13)
+{
+  animation-delay:3s;
+}
+@keyframes animate
+{
+0%,5%{
+  color:#fff;
+  filter:blur(2px);
+  text-shadow:0 0 10px #ff0058,
+              0 0 20px #ff0058,
+	    	  0 0 40px #ff0058,
+		      0 0 80px #ff0058,
+		      0 0 120px #ff0058,
+		      0 0 200px #ff0058,
+		      0 0 300px #ff0058,
+		      0 0 400px #ff0058,
+			  0 0 500px #ff0058,
+		      0 0 600px #ff0058,
+		      0 0 700px #ff0058,
+		      0 0 800px #ff0058,
+			  0 0 900px #ff0058;
+        }
+5%,95%{
+  color:black;
+  filter:blur(0px);
+  text-shadow: none;
+      }	  
+}
+
+h2
+{
+  float: right;
+   padding-left:500px;
+   padding-top:10px;
+   font-family:Gabriola;
+   font-size:40px;
+}
+h3 
+{
+   font-size:25px;
+   font-family:Harrington;
+}
+      
+     
+.topnav {
+          overflow: hidden;
+          background-color: #333;
+        }
+        
+        
+        .topnav a {
+          float: left;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+        
+        .topnav a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+        
+ .container
+{
+  padding-top: 100px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+}
+.container .box
+{
+  position:absolute;
+  left:30px;
+  top:200px;
+  padding-top:10px;
+  width:430px;
+  height:300px;
+  color:#fff;
+  background:#111;
+  display:flex;
+  transition:0.5s;
+}
+.container .box:hover
+{
+  transform:translateY(-20px);
+}
+.container .box::before
+{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:linear-gradient(45deg,#ffbc00,#ff0058);
+}
+.container .box::after
+{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:linear-gradient(45deg,#ffbc00,#ff0058);
+  filter:blur(30px);
+}
+.container .box span
+{
+  position:absolute;
+  top:6px;
+  left:6px;
+  right:6px;
+  bottom:6px;
+  background:rgba(0,0,0,0.6);
+  z-index:2;
+}
+.container .box .content
+{
+  z-index:10;
+}
+tt {
+  font-family:"Harrington";
+}
+  
+.login{
+        width: 200px;
+
+        padding: 50px;
+}
+h4{
+    text-align: center;
+    color: #277582;
+    padding: 20px;
+}
+label{
+    color: #08ffd1;
+    font-size: 17px;
+}
+#Uname{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+}
+#Pass{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+
+}
+#log{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 17px;
+    padding-left: 7px;
+    color: blue;
+
+
+}
+
+
+    
+ </style>
+</head>
+<body>
+      <div class="bg"> 
+            <div class="topnav">
+              <a href="#home">Home</a>
+              <a href="#news">News</a>
+              <a href="#contact">Contact</a>
+              <a href="#about">About</a>
+            </div>
+ 
+	  <h1>
+          <span> T </span>
+	      <span> i </span>
+	      <span> m </span>
+          <span> e &nbsp; </span> 
+	      <span> T </span>
+	      <span> o &nbsp; </span>
+	      <span> T </span>
+	      <span> r </span>
+	      <span> i  </span>
+        <span> p . </span>
+	      <span> </span>
+	      <span> c </span>
+	      <span> o </span>
+	      <span> m </span>	  
+	
+            
+	   </h1>	
+     <div class="container">
+      <div class="box">
+  <span></span>
+   <div class="content">
+      <div class="login">
+    <form id="login" method="get" action="login.php">
+        <label><b>User Name
+        </b>
+        </label>
+        <input type="text" name="Uname" id="Uname" placeholder="Username">
+        <br><br>
+        <label><b>Password
+        </b>
+        </label>
+        <input type="Password" name="Pass" id="Pass" placeholder="Password">
+        <br><br><center>
+        <button type="button" onclick="alert('Message Received')">Submit</button>
+ </center>
+        <br><br>
+       
+       
+    </form></div>
+    
+  </div></div></div>
+      </div>
+      
+	      </body>
+	 </html>
